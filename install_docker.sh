@@ -46,7 +46,7 @@ if experimental then
     {
     "experimental": true
     }
-    EOF
+EOF
 
     # Restart docker.
     systemctl daemon-reload
