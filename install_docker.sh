@@ -38,14 +38,8 @@ add-apt-repository \
 apt-get update
 apt-get install -y docker-ce docker-ce-cli containerd.io
 
-echo "*******************" $USER
-usermod -aG docker $USER
-
-echo "experimental: $experimental"
-
-if [ $experimental ]; then
-
-    echo "***********************************inside if"
+if [ $experimental ]
+then
     # Setup daemon.
     cat > /etc/docker/daemon.json <<EOF
     {
