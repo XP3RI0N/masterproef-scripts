@@ -43,7 +43,7 @@ usermod -aG docker $USER
 
 echo "experimental: $experimental"
 
-if [ experimental -eq true ] then
+if [ $experimental ]; then
 
     echo "***********************************inside if"
     # Setup daemon.
