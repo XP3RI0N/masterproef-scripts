@@ -28,7 +28,8 @@ apt install -y \
 	libcap-dev \
 	libaio-dev \
 	apparmor \
-	libnet1-dev
+	libnet1-dev \
+	pkg-config
 
 # Clone and make CRIU
 git clone  https://github.com/xemul/criu.git criu
