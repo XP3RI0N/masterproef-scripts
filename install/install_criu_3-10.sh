@@ -3,7 +3,7 @@ set -e
 
 apt update
 apt upgrade
-apt install build-essential \
+apt install -y build-essential \
 			pkg-config \
 			libnet-dev python-yaml libaio-dev \
 			libprotobuf-dev libprotobuf-c0-dev protobuf-c-compiler protobuf-compiler python-protobuf libnl-3-dev libcap-dev python-future
