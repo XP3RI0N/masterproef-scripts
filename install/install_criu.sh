@@ -32,11 +32,13 @@ apt install -y \
 	pkg-config
 
 # Clone and make CRIU
+cd
 git clone  https://github.com/xemul/criu.git criu
 cd criu
 make clean
 make
 make install
+cd
 
 # Check instalation: desired output = "looks good"
 criu check

@@ -9,6 +9,7 @@ apt install -y build-essential \
 			libprotobuf-dev libprotobuf-c0-dev protobuf-c-compiler protobuf-compiler python-protobuf libnl-3-dev libcap-dev python-future
 
 # criu install
+cd
 curl -O -sSL http://download.openvz.org/criu/criu-3.10.tar.bz2
 tar xjf criu-3.10.tar.bz2 
 cd criu-3.10
