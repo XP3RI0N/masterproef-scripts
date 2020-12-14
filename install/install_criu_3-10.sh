@@ -2,7 +2,7 @@
 set -e
 
 apt update
-apt upgrade
+apt upgrade -y
 apt install -y build-essential \
 			pkg-config \
 			libnet-dev python-yaml libaio-dev \
